@@ -16,7 +16,6 @@ let btn = document.getElementById("btn");
 
 $(document).ready(function LoadData() {
   $("button").click(function () {
-    const newDiv = $('<div id="dane-programisty"></div>').appendTo("body");
     $.getJSON(
       "https://akademia108.pl/kurs-front-end/ajax/1-pobierz-dane-programisty.php",
       function (date) {
@@ -27,4 +26,5 @@ $(document).ready(function LoadData() {
       }
     );
   });
+  const newDiv = $('<div id="dane-programisty"></div>').appendTo("body");
 });
